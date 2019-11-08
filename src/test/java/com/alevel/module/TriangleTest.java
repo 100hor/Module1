@@ -11,9 +11,9 @@ public class TriangleTest {
         Triangle.Cord b = new Triangle.Cord(1, 2);
         Triangle.Cord a = new Triangle.Cord(1, 4);
         Triangle.Cord c = new Triangle.Cord(5, 3);
-        int res = new Triangle().GetArea(a, b, c);
+        float res = new Triangle().GetArea(a, b, c);
         int exp = 4;
-        assertEquals(exp, res);
+        assertEquals(exp, res, 2);
     }
 
     @Test
@@ -21,9 +21,9 @@ public class TriangleTest {
         Triangle.Cord b = new Triangle.Cord(1, 2);
         Triangle.Cord a = new Triangle.Cord(1, 2);
         Triangle.Cord c = new Triangle.Cord(5, 3);
-        int res = new Triangle().GetArea(a, b, c);
+        float res = new Triangle().GetArea(a, b, c);
         int exp = 0;
-        assertEquals(exp, res);
+        assertEquals(exp, res, 2);
     }
 
     @Test
@@ -31,9 +31,9 @@ public class TriangleTest {
         Triangle.Cord b = new Triangle.Cord(1, 2);
         Triangle.Cord a = new Triangle.Cord(1, 2);
         Triangle.Cord c = new Triangle.Cord(1, 2);
-        int res = new Triangle().GetArea(a, b, c);
+        float res = new Triangle().GetArea(a, b, c);
         int exp = 0;
-        assertEquals(exp, res);
+        assertEquals(exp, res, 2);
     }
 
 
